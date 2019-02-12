@@ -1,3 +1,5 @@
+"use strict";
+
 class ObtainVector{
   // note: player is the one who plays the current turn. it may be AI
   // if player is AI, then oppo is the user

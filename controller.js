@@ -1,3 +1,5 @@
+"use strict";
+
 function delayedFunc(func, timeUnits){
   if (timeUnits == null)
   timeUnits = 1;

@@ -1,3 +1,5 @@
+"use strict";
+
 //now this indeed counts the views of player tables (max=2)
 var tableviewcount = 0;
 class TableInfoView{

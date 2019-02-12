@@ -1,11 +1,13 @@
+"use strict";
+
 //consts
 
-MAX_MAIN_RATIO = 2.3;//max width/height ratio of the main board
-MIN_MAIN_RATIO = 1.66;//min width/height ratio of the main board
-CARD_RATIO = 3 / 4; //width/height ratio of a card
-HAND_CARD_OVERLAP = 0.44; //percent of neighboring cards that overlap in hand board
-OPERATION_DELAY = 500; //delay in milliseconds between machine operations
-MOVE_DURATION = 2; //2 time units (OPERATION_DELAY)
+const MAX_MAIN_RATIO = 2.3;//max width/height ratio of the main board
+const MIN_MAIN_RATIO = 1.66;//min width/height ratio of the main board
+const CARD_RATIO = 3 / 4; //width/height ratio of a card
+const HAND_CARD_OVERLAP = 0.44; //percent of neighboring cards that overlap in hand board
+const OPERATION_DELAY = 500; //delay in milliseconds between machine operations
+const MOVE_DURATION = 2; //2 time units (OPERATION_DELAY)
 
 var CARDH=0, CARDW=0, WINW=0, WINH=0, MAINW=0, MAINH=0;
 
@@ -156,7 +158,7 @@ class Card{
     this.container.classList.add("charcontainer");
     var cardContainer = document.createElement("div");
     this.container.appendChild(cardContainer);
-    cardContainer.classList.add("cardContainer", "transitall");
+    cardContainer.classList.add("cardcontainer", "transitall");
     this.card = document.createElement("div");
     cardContainer.appendChild(this.card);
     this.container.id = char.id;

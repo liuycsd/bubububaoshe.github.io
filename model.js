@@ -1,15 +1,17 @@
+"use strict";
+
 /*
 maximum combo name size: 8
 maximum combo size: 6
 */
-INIT_CARD_NUM_HAND = 10;
-INIT_CARD_NUM_POOL = 8;
-POOL_CAPACITY = INIT_CARD_NUM_POOL + 2;
-BONUS_THRESHOLDS = [170, 140, 110];
-MAX_SP_NUM = 15;
+const INIT_CARD_NUM_HAND = 10;
+const INIT_CARD_NUM_POOL = 8;
+const POOL_CAPACITY = INIT_CARD_NUM_POOL + 2;
+const BONUS_THRESHOLDS = [170, 140, 110];
+const MAX_SP_NUM = 15;
 
-DEFAULT_CHAR_POEM = "";
-COMMON_CHAR_LIST = [
+const DEFAULT_CHAR_POEM = "";
+const COMMON_CHAR_LIST = [
   [
     ['ly1','陵越',2,'冬','剑意御风凌山月，\n往事伴烛映霜雪。'],
     ['qy1','悭臾',2,'夏','东海祖州识命魂，\n不周山下多古意。'],
@@ -95,7 +97,7 @@ COMMON_CHAR_LIST = [
     ["mhz3", "梦魂枝", 2, "秋", ""]
   ]
 ];
-COMBO_LIST  = [
+const COMBO_LIST  = [
   //[char name list], comboname, score, comboid, audio duration(ms)
   [['风晴雪','焦炭','谢衣'],'厨房功夫',10,'cfgj',1097.143],
   [['谢衣','乐无异'],'春风雨',4,'cfy',2351.02],

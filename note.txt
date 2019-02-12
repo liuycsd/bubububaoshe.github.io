@@ -229,7 +229,7 @@ CopyTrick:
 1. 复制对方任意一张珍稀牌的技能
 2. 被交换后卡牌技能无效
 
-﻿不明觉厉的CSS Transition：
+不明觉厉的CSS Transition：
 在js里调用clientWidth一定能触发transition(据说会令css reflow，有资源消耗)
 
 游戏规则：

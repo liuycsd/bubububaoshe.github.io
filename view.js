@@ -121,7 +121,7 @@ class Sound{
   promisedPlay(audio){
     //I don't a thing about promises, maybe i will learn about it someday
     const playPromise = audio.play();
-    if (playPromise !== null){
+    if (typeof playPromise !== 'undefined' && playPromise !== null){
         playPromise.catch(() => {//sound.audio.play();
         })
     }
